@@ -1,3 +1,16 @@
 # macOS system files
 .DS_Store
-**/.DS_Store 
+**/.DS_Store
+
+# Optimization artifacts
+assets/fonts/_unused/
+assets/css/social-icons-old.css
+
+# Development files
+*.log
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*~ 
