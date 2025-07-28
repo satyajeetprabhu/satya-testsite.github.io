@@ -27,7 +27,7 @@
 
 /* Work Section Layout */
 .work-section {
-    margin: 4rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .work-title {
@@ -90,7 +90,7 @@
    ================================ */
 
 .music-section {
-    margin: 4rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .music-title {
@@ -245,7 +245,7 @@
    ================================ */
 
 .tech-section {
-    margin: 4rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .tech-title {
