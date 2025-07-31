@@ -18,6 +18,9 @@
     --font-body: "Molengo", sans-serif;
     --font-quote: "News Cycle", sans-serif;
     
+    /* Typography Scale - Clear Size System */
+    /* Font size variables removed - using direct pixel values instead */
+    
     /* Spacing Scale */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -76,7 +79,8 @@ a:hover {
 .container {
     max-width: var(--bp-large);
     margin: 0 auto;
-    padding: 0 var(--space-md);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .visually-hidden {
@@ -89,6 +93,24 @@ a:hover {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Skip Navigation for Accessibility */
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--text-color);
+    color: var(--primary-color);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.skip-nav:focus {
+    top: 6px;
 }
 
 /* Layout Components */
@@ -143,7 +165,7 @@ a:hover {
 
 .nav-menu a {
     font-family: var(--font-nav);
-    font-size: 1.2rem;
+    font-size: 20px;
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -275,7 +297,6 @@ body.menu-open .hamburger span:nth-child(3) {
 
 .hero-title {
     font-family: var(--font-display);
-    /* font-size: clamp(2rem, 6vw, 3rem); */
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 300;
     color: var(--primary-color);
@@ -287,7 +308,7 @@ body.menu-open .hamburger span:nth-child(3) {
 .social-links {
     position: fixed;
     top: 50%;
-    right: var(--space-lg);
+    right: var(--space-sm);
     transform: translateY(-50%);
     z-index: 100;
 }
@@ -308,13 +329,13 @@ body.menu-open .hamburger span:nth-child(3) {
 
 /* Social icon size for desktop */
 .social-links .wsite-social-item:before {
-    font-size: 1.5rem;
+    font-size: 28px;
 }
 
 /* Social icon size for mobile */
 @media (max-width: 768px) {
     .social-links .wsite-social-item:before {
-        font-size: 1rem;
+        font-size: 20px;
     }
 }
 
@@ -347,7 +368,7 @@ body.menu-open .hamburger span:nth-child(3) {
 
 .about-text {
     font-family: var(--font-base);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.65;
     font-weight: 300;
 }
@@ -416,7 +437,7 @@ body.menu-open .hamburger span:nth-child(3) {
     grid-template-columns: 4fr 1fr;
     gap: var(--space-lg);
     align-items: center;
-    margin-top: var(--space-xl);
+    margin-top: var(--space-sm);
     padding: var(--space-lg);
     background: #f8f9fa;
     border-radius: 12px;
@@ -425,7 +446,7 @@ body.menu-open .hamburger span:nth-child(3) {
 
 .quote {
     font-family: var(--font-quote);
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--quote-color);
     font-style: italic;
     line-height: 1.6;
@@ -433,7 +454,7 @@ body.menu-open .hamburger span:nth-child(3) {
 
 .quote-author {
     font-family: var(--font-quote);
-    font-size: 1rem;
+    font-size: 16px;
     font-style: italic;
     text-align: right;
     color: #666;
@@ -445,12 +466,16 @@ body.menu-open .hamburger span:nth-child(3) {
     color: var(--primary-color);
     text-align: center;
     padding: var(--space-sm) 0;
-    font-size: 1rem;
+    font-size: 18px;
     margin-top: var(--space-sm);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
     .nav-menu {
         display: none;
     }
@@ -492,15 +517,19 @@ body.menu-open .hamburger span:nth-child(3) {
     }
 
     .about-text {
-        font-size: 1.125rem;
+        font-size: 20px;
     }
 
     .quote {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 
     .quote-author {
-        font-size: 0.9rem;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 16px;
     }
 
     .main-content {
@@ -514,19 +543,23 @@ body.menu-open .hamburger span:nth-child(3) {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 var(--space-sm);
+        padding: 0 var(--space-xs);
     }
 
     .about-text {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .quote {
-        font-size: 0.8rem;
+        font-size: 14px;
     }
 
     .quote-author {
-        font-size: 0.8rem;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
     }
 
     .nav {

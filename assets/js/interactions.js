@@ -1,6 +1,6 @@
 /**
- * Modern JavaScript for Satyajeet Prabhu Website
- * Clean, efficient, and accessible navigation
+ * Interactions JavaScript for Satyajeet Prabhu Website
+ * Handles all user interactions, animations, and dynamic behaviors
  */
 
 (function() {
