@@ -98,7 +98,7 @@ a:hover {
 /* Skip Navigation for Accessibility */
 .skip-nav {
     position: absolute;
-    top: -40px;
+    top: -100px;
     left: 6px;
     background: var(--text-color);
     color: var(--primary-color);
@@ -107,16 +107,20 @@ a:hover {
     border-radius: 4px;
     z-index: 1000;
     transition: top 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .skip-nav:focus {
     top: 6px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Layout Components */
 .hero {
     /* background: url("../images/backgrounds/25471753_processed.jpg") bottom left/cover no-repeat fixed; */
-    background: url("../images/backgrounds/25471753_processed.jpg") 25% 100%/cover no-repeat fixed;
+    background: url("../images/backgrounds/25471753_processed.jpg") bottom left/cover no-repeat fixed;
     min-height: 30vh;
     display: flex;
     flex-direction: column;

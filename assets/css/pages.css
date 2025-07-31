@@ -1,8 +1,12 @@
-/* Page-Specific Styles for All Pages */
+/* ================================
+   PAGE-SPECIFIC STYLES
+   ================================ */
 
 /* ================================
-   ABOUT IMAGE (INDEX PAGE)
+   INDEX PAGE STYLES
    ================================ */
+
+/* About Image */
 .about-image img {
   width: 80%; /* scale to 80% of container */
   height: auto;
@@ -43,29 +47,6 @@
    WORK PAGE STYLES
    ================================ */
 
-/* Video Containers */
-.video-container {
-    position: relative;
-    width: 100%; /* Full width by default */
-    max-width: 600px; /* Start with smaller max-width */
-    height: 0;
-    padding-bottom: 56.25% !important; /* 16:9 aspect ratio */
-    padding-top: 30px; /* Account for YouTube's interface elements */
-    margin: 2rem auto; /* Center the container */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 /* Work Section Layout */
 .work-section {
     margin: 0 0 1rem 0;
@@ -92,21 +73,6 @@
     margin: 1rem auto;
     box-sizing: border-box;
 }
-.work-item .work-description {
-    font-family: var(--font-base);
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.work-item .video-container {
-    margin: 1rem auto;
-    max-width: 100%;
-    transform: none;
-}
 
 .work-item:hover {
     transform: translateY(-5px);
@@ -129,6 +95,17 @@
     color: var(--text-color);
 }
 
+.work-item .work-description {
+    font-family: var(--font-base);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .work-item .title-link {
     font-family: var(--font-base);
     font-size: 20px;
@@ -140,6 +117,35 @@
 .work-item .title-link:hover {
     color: #007acc;
     opacity: 1;
+}
+
+/* Video Containers */
+.video-container {
+    position: relative;
+    width: 100%; /* Full width by default */
+    max-width: 600px; /* Start with smaller max-width */
+    height: 0;
+    padding-bottom: 56.25% !important; /* 16:9 aspect ratio */
+    padding-top: 30px; /* Account for YouTube's interface elements */
+    margin: 2rem auto; /* Center the container */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.work-item .video-container {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
 }
 
 /* ================================
@@ -174,7 +180,6 @@
     color: #007acc !important;
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s ease;
-    font-size: 20px !important;
     font-family: var(--font-base) !important;
     text-decoration: none !important;
 }
@@ -194,6 +199,68 @@
     margin-right: auto;
 }
 
+.music-item {
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.music-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.music-item h3 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.music-item p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.music-item .music-description {
+    font-family: var(--font-base);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.music-item .title-link {
+    font-family: var(--font-base);
+    font-size: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.music-item .title-link:hover {
+    color: #007acc;
+    opacity: 1;
+}
+
+.music-item iframe {
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* Music Embeds */
 .music-embed {
     display: flex;
     justify-content: center;
@@ -219,6 +286,13 @@
     height: 480px !important; /* Adjust this value to change height */
 }
 
+.music-item .music-embed {
+    margin: 1rem auto;
+    max-width: 100%;
+    transform: none;
+}
+
+/* SoundCloud Embeds */
 .soundcloud-embed {
     margin: 1rem auto;
     max-width: 100%;
@@ -235,6 +309,7 @@
     height: 120px; /* Default height for desktop */
 }
 
+/* Performance Images */
 .performance-image {
     text-align: center;
     margin: 1rem auto;
@@ -254,34 +329,20 @@
     transform: scale(1.02);
 }
 
-.music-item {
-    background: #fff;
-    padding: 1.5rem 1rem;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 700px;
-    margin: 1rem auto;
-    box-sizing: border-box;
-}
-
-.music-item .music-description {
-    font-family: var(--font-base);
-    font-size: 20px;
+/* Live Images */
+.live-image {
+    margin: 2rem 0;
     text-align: center;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.music-item .music-embed {
-    margin: 1rem auto;
+.live-image img {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 100%;
-    transform: none;
+    height: auto;
 }
 
+/* Video Wrappers */
 .music-item .video-wrapper {
     margin: 1rem auto;
     max-width: 100%;
@@ -298,57 +359,6 @@
     padding: 0;
 }
 
-
-
-.music-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
-
-.music-item h3 {
-    font-family: var(--font-heading);
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.music-item p {
-    font-family: var(--font-base);
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-}
-
-.music-item iframe {
-    border-radius: 8px;
-    margin: 0;
-}
-
-.music-item a {
-    font-family: var(--font-heading);
-    color: var(--text-color);
-    text-decoration: underline;
-    transition: opacity 0.3s ease;
-}
-
-.music-item a:hover {
-    opacity: 0.7;
-}
-
-.live-image {
-    margin: 2rem 0;
-    text-align: center;
-}
-
-.live-image img {
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    height: auto;
-}
-
 /* ================================
    TECH PAGE STYLES
    ================================ */
@@ -362,34 +372,52 @@
     font-size: 36px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
 .tech-description {
     font-family: var(--font-base);
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     color: var(--text-color);
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.tech-grid {
-    display: grid;
-    gap: 2rem;
-    margin-top: 2rem;
+/* Tech Descriptions */
+.tech-description a {
+    color: #007acc !important;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    font-family: var(--font-base) !important;
+    text-decoration: none !important;
 }
+
+.tech-description a:hover {
+    border-bottom-color: #007acc;
+    opacity: 1;
+}
+
 
 .tech-item {
     background: #fff;
-    padding: 2rem;
+    padding: 1.5rem 1rem;
     border-radius: 16px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+/* Publication items with custom top/bottom padding */
+.publication-item {
     text-align: center;
+    padding-top: 1rem;    /* 1rem top padding */
+    padding-bottom: 1rem; /* 1rem bottom padding */
 }
 
 .tech-item:hover {
@@ -399,9 +427,9 @@
 
 .tech-item h3 {
     font-family: var(--font-heading);
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
     color: #333;
 }
 
@@ -422,12 +450,9 @@
 
 .tech-item .title-link {
     font-family: var(--font-base);
-    font-size: 18px;
-    font-style: italic;
-    color: var(--quote-color);
-    text-decoration: underline;
-    margin-bottom: 1rem;
-    display: inline-block;
+    font-size: 20px;
+    color: var(--text-color);
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -436,8 +461,15 @@
     opacity: 1;
 }
 
+.tech-item img {
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech Images */
 .tech-image {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0 0;
     text-align: center;
 }
 
@@ -458,6 +490,7 @@
     display: inline-block;
 }
 
+/* Publication Items */
 .publication-item {
     text-align: center;
 }
@@ -466,6 +499,13 @@
     text-align: center;
 }
 
+.presentation-item .tech-image img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* GitHub Items */
 .github-item {
     background: linear-gradient(135deg, #24292e 0%, #2f363d 100%);
     color: #fff;
@@ -483,11 +523,18 @@
     height: auto;
 }
 
+.github-item .tech-image img {
+    max-width: 15%;
+    margin: 0 auto;
+    display: block;
+}
+
 .github-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 45px rgba(36, 41, 46, 0.3);
 }
 
+/* MaxForLive Items */
 .maxforlive-item {
     background: linear-gradient(135deg, #ff6b35 0%, #ff8e53 100%);
     color: #fff;
@@ -497,47 +544,31 @@
     color: #fff;
 }
 
-.maxforlive-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 45px rgba(255, 107, 53, 0.3);
-}
-
-.tech-item img {
-    border-radius: 8px;
-    margin: 1rem 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.presentation-item .tech-image img {
-    max-width: 80%;
-    margin: 0 auto;
-    display: block;
-}
-
 .maxforlive-item .tech-image img {
     max-width: 100%;
     margin: 0 auto;
     display: block;
 }
 
-.github-item .tech-image img {
-    max-width: 15%;
-    margin: 0 auto;
-    display: block;
+.maxforlive-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(255, 107, 53, 0.3);
 }
-
 
 /* ================================
    RESPONSIVE STYLES
    ================================ */
 
+/* Tablet and Mobile Responsive */
 @media (max-width: 768px) {
+    /* Global title adjustments */
     .work-title,
     .music-title,
     .tech-title {
         font-size: 24px;
     }
     
+    /* Work page responsive */
     .work-item h3 {
         font-size: 18px;
     }
@@ -546,22 +577,28 @@
         font-size: 18px;
     }
     
-    .music-embed iframe {
-        height: 480px !important; /* Better height for mobile */
-        width: 80% !important; /* Scale down width on mobile */
-        max-width: 80%;
+    .tech-item h3 {
+        font-size: 18px;
+    }
+    
+    .tech-item .title-link {
+        font-size: 18px;
+    }
+    
+    .music-item .title-link {
+        font-size: 18px;
+    }
+    
+    .music-item .title-link:hover {
+        color: #007acc;
+        opacity: 1;
     }
     
     .work-item .work-description,
     .music-description,
     .tech-description {
-        font-size: 18px !important;
+        font-size: 20px !important;
         padding: 0 1rem;
-    }
-    
-    .music-description a {
-        font-size: 18px !important;
-        font-family: var(--font-base) !important;
     }
     
     .work-item,
@@ -570,6 +607,7 @@
         padding: 1.5rem;
     }
     
+    /* Video container responsive */
     .video-container {
         margin: 1.5rem 0;
         max-width: 100%; /* Full width on mobile */
@@ -592,6 +630,9 @@
     
     .music-embed iframe {
         width: 100%;
+        height: 480px !important; /* Better height for mobile */
+        width: 80% !important; /* Scale down width on mobile */
+        max-width: 80%;
     }
     
     .soundcloud-embed iframe {
@@ -601,10 +642,25 @@
     /* Tech page responsive */
     .publication-item {
         padding: 1.5rem;
+        padding-top: 1rem;    /* 1rem top padding on tablets */
+        padding-bottom: 1rem; /* 1rem bottom padding on tablets */
         text-align: center;
+    }
+    
+    .presentation-item .tech-image img {
+        max-width: 90%;
+    }
+    
+    .maxforlive-item .tech-image img {
+        max-width: 100%;
+    }
+    
+    .github-item .tech-image img {
+        max-width: 20%;
     }
 }
 
+/* Small Mobile Responsive */
 @media (max-width: 480px) {
     .work-title,
     .music-title,
@@ -620,15 +676,22 @@
         font-size: 16px;
     }
     
+    .tech-item h3 {
+        font-size: 16px;
+    }
+    
+    .tech-item .title-link {
+        font-size: 16px;
+    }
+    
+    .music-item .title-link {
+        font-size: 16px;
+    }
+    
     .work-item .work-description,
     .music-description,
     .tech-description {
-        font-size: 16px !important;
-    }
-    
-    .music-description a {
-        font-size: 16px !important;
-        font-family: var(--font-base) !important;
+        font-size: 18px !important;
     }
     
     .work-item,
@@ -646,8 +709,19 @@
     }
 }
 
+/* Work item specific mobile adjustments */
 @media (max-width: 600px) {
     .work-item {
+        padding: 1rem 1rem;
+        max-width: 98vw;
+    }
+    
+    .music-item {
+        padding: 1rem 1rem;
+        max-width: 98vw;
+    }
+    
+    .tech-item {
         padding: 1rem 1rem;
         max-width: 98vw;
     }
@@ -689,20 +763,5 @@
     .video-container {
         max-width: 1100px; /* Scale up for extra large screens */
         transform: scale(0.9); /* Scale down to 90% */
-    }
-}
-
-/* Responsive image scaling for tech sections */
-@media (max-width: 768px) {
-    .presentation-item .tech-image img {
-        max-width: 90%;
-    }
-    
-    .maxforlive-item .tech-image img {
-        max-width: 100%;
-    }
-    
-    .github-item .tech-image img {
-        max-width: 20%;
     }
 }
