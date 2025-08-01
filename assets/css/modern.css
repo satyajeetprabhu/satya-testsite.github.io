@@ -134,16 +134,16 @@ a:hover {
         background: url("../images/backgrounds/25471753_processed.jpg") 0% 0% no-repeat fixed;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-        -webkit-background-size: 33.33% 33.33%;
-        background-size: 33.33% 33.33%;
+        -webkit-background-size: 300% 300%;
+        background-size: 300% 300%;
     }
     
     /* Fallback for iOS devices that don't support fixed backgrounds */
     @supports not (background-attachment: fixed) {
         .hero {
             background: url("../images/backgrounds/25471753_processed.jpg") 0% 0% no-repeat scroll;
-            -webkit-background-size: 33.33% 33.33%;
-            background-size: 33.33% 33.33%;
+            -webkit-background-size: 300% 300%;
+            background-size: 300% 300%;
         }
     }
 }
