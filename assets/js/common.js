@@ -16,7 +16,7 @@
         // Preload resources
         preloads: [
             { href: 'assets/css/fonts.css', as: 'style' },
-            { href: 'assets/images/backgrounds/25471753_processed.jpg', as: 'image' }
+            { href: 'assets/images/backgrounds/25471753_processed.jpg', as: 'image', fetchpriority: 'high' }
         ],
         
         // Stylesheets

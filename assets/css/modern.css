@@ -127,6 +127,26 @@ a:hover {
     position: relative;
 }
 
+/* ===== iOS BACKGROUND FIX - REMOVE IF ISSUES ===== */
+/* iOS-specific background fix */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background: url("../images/backgrounds/25471753_processed.jpg") top left/cover no-repeat fixed;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+    /* Fallback for iOS devices that don't support fixed backgrounds */
+    @supports not (background-attachment: fixed) {
+        .hero {
+            background: url("../images/backgrounds/25471753_processed.jpg") top left/cover no-repeat scroll;
+        }
+    }
+}
+/* ===== END iOS BACKGROUND FIX ===== */
+
 .hero::before {
     content: '';
     position: absolute;
