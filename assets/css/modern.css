@@ -131,17 +131,17 @@ a:hover {
 /* iOS-specific background fix */
 @supports (-webkit-touch-callout: none) {
     .hero {
-        background: url("../images/backgrounds/25471753_processed.jpg") top left/cover no-repeat fixed;
+        background: url("../images/backgrounds/25471753_processed.jpg") 0% 0%/contain no-repeat fixed;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-        -webkit-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: contain;
+        background-size: contain;
     }
     
     /* Fallback for iOS devices that don't support fixed backgrounds */
     @supports not (background-attachment: fixed) {
         .hero {
-            background: url("../images/backgrounds/25471753_processed.jpg") top left/cover no-repeat scroll;
+            background: url("../images/backgrounds/25471753_processed.jpg") 0% 0%/contain no-repeat scroll;
         }
     }
 }
