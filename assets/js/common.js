@@ -93,13 +93,8 @@
         `;
         head.appendChild(gtagConfig);
         
-        // Add stylesheets
-        siteConfig.stylesheets.forEach(stylesheet => {
-            const link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = stylesheet;
-            head.appendChild(link);
-        });
+        // Note: CSS is now loaded directly in HTML head to prevent FOUC
+        console.log('Head elements loaded - CSS in HTML, Analytics via JS');
     }
     
     // Generate skip navigation
