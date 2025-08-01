@@ -136,8 +136,6 @@ a:hover {
         transform: translateZ(0);
         -webkit-background-size: 300% 300%;
         background-size: 300% 300%;
-        /* Temporary test - remove this line */
-        border: 3px solid red;
     }
     
     /* Fallback for iOS devices that don't support fixed backgrounds */
@@ -146,8 +144,7 @@ a:hover {
             background: url("../images/backgrounds/25471753_processed.jpg") 0% 0% no-repeat scroll;
             -webkit-background-size: 300% 300%;
             background-size: 300% 300%;
-            /* Temporary test - remove this line */
-            border: 3px solid red;
+
         }
     }
 }
