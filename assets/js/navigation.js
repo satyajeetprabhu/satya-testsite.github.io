@@ -5,7 +5,7 @@ const navigationConfig = {
         { href: "work.html", text: "Work" },
         { href: "tech.html", text: "Tech" },
         { href: "music.html", text: "Music" },
-        { href: "https://drive.google.com/file/d/1oaGo4FWNIFjlzzBk9tgSiGnzDkzmeGMR/view?usp=sharing", text: "CV", external: true }
+        { href: "https://drive.google.com/file/d/1_qemvd7UgPTYeY_afVrHFU2X7WWkROJJ/view?usp=sharing", text: "CV", external: true }
     ]
 };
 

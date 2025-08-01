@@ -10,7 +10,7 @@
     const siteConfig = {
         // Analytics
         analytics: {
-            gtag: 'UA-46876043-1'
+            gtag: 'G-1GFQRP80JN' // TODO: Replace with your new GA4 Measurement ID from Google Analytics
         },
         
         // Preload resources
@@ -78,7 +78,7 @@
             head.appendChild(link);
         });
         
-        // Add Google Analytics
+        // Add Google Analytics 4
         const gtagScript = document.createElement('script');
         gtagScript.async = true;
         gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.gtag}`;
@@ -89,7 +89,10 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${siteConfig.analytics.gtag}');
+            gtag('config', '${siteConfig.analytics.gtag}', {
+                page_title: document.title,
+                page_location: window.location.href
+            });
         `;
         head.appendChild(gtagConfig);
         

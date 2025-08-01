@@ -33,39 +33,7 @@
        url('../fonts/Molengo/regular.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
-/* Oswald Font */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/Oswald/light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Oswald/light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Oswald/light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Oswald/light.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/Oswald/light.ttf') format('truetype'); /* Safari, Android, iOS */
-}
 
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/Oswald/regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Oswald/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Oswald/regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Oswald/regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/Oswald/regular.ttf') format('truetype'); /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/Oswald/bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Oswald/bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Oswald/bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Oswald/bold.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/Oswald/bold.ttf') format('truetype'); /* Safari, Android, iOS */
-}
 
 /* Advent Pro Font */
 @font-face {
