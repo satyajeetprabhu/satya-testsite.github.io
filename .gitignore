@@ -3,9 +3,6 @@
 **/.DS_Store
 
 # Optimization artifacts
-assets/fonts/_unused/
-assets/css/social-icons-old.css
-archive/
 IMPROVEMENT_PLAN.md
 
 # Development files
