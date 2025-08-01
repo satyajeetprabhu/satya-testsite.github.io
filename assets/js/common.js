@@ -8,11 +8,6 @@
     
     // Configuration object for all shared elements
     const siteConfig = {
-        // Analytics
-        analytics: {
-            gtag: 'G-1GFQRP80JN' // TODO: Replace with your new GA4 Measurement ID from Google Analytics
-        },
-        
         // Preload resources
         preloads: [
             { href: 'assets/css/fonts.css', as: 'style' },
@@ -78,26 +73,9 @@
             head.appendChild(link);
         });
         
-        // Add Google Analytics 4
-        const gtagScript = document.createElement('script');
-        gtagScript.async = true;
-        gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.gtag}`;
-        head.appendChild(gtagScript);
-        
-        const gtagConfig = document.createElement('script');
-        gtagConfig.textContent = `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${siteConfig.analytics.gtag}', {
-                page_title: document.title,
-                page_location: window.location.href
-            });
-        `;
-        head.appendChild(gtagConfig);
-        
         // Note: CSS is now loaded directly in HTML head to prevent FOUC
-        console.log('Head elements loaded - CSS in HTML, Analytics via JS');
+        // Note: Google Analytics is now loaded directly in HTML head for early tracking
+        console.log('Head elements loaded - CSS and Analytics in HTML');
     }
     
     // Generate skip navigation
