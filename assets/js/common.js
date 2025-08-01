@@ -51,18 +51,7 @@
     function generateHead() {
         const head = document.head;
         
-        // Add favicon
-        const favicon = document.createElement('link');
-        favicon.rel = 'icon';
-        favicon.type = 'image/x-icon';
-        favicon.href = '/favicon.ico';
-        head.appendChild(favicon);
-        
-        // Add Apple touch icon
-        const appleIcon = document.createElement('link');
-        appleIcon.rel = 'apple-touch-icon';
-        appleIcon.href = '/apple-touch-icon.png';
-        head.appendChild(appleIcon);
+
         
         // Add preload links
         siteConfig.preloads.forEach(preload => {
