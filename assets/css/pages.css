@@ -106,18 +106,7 @@
     margin-right: auto;
 }
 
-.work-item .title-link {
-    font-family: var(--font-base);
-    font-size: 20px;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.work-item .title-link:hover {
-    color: #007acc;
-    opacity: 1;
-}
 
 /* Video Containers */
 .video-container {
@@ -181,6 +170,7 @@
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s ease;
     font-family: var(--font-base) !important;
+    font-size: 20px;
     text-decoration: none !important;
 }
 
@@ -242,18 +232,7 @@
     margin-right: auto;
 }
 
-.music-item .title-link {
-    font-family: var(--font-base);
-    font-size: 20px;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.music-item .title-link:hover {
-    color: #007acc;
-    opacity: 1;
-}
 
 .music-item iframe {
     border-radius: 8px;
@@ -448,18 +427,7 @@
     color: var(--text-color);
 }
 
-.tech-item .title-link {
-    font-family: var(--font-base);
-    font-size: 20px;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.tech-item .title-link:hover {
-    color: #007acc;
-    opacity: 1;
-}
 
 .tech-item img {
     border-radius: 8px;
@@ -573,32 +541,22 @@
         font-size: 18px;
     }
     
-    .work-item .title-link {
-        font-size: 18px;
-    }
-    
     .tech-item h3 {
         font-size: 18px;
     }
     
-    .tech-item .title-link {
-        font-size: 18px;
-    }
-    
-    .music-item .title-link {
-        font-size: 18px;
-    }
-    
-    .music-item .title-link:hover {
-        color: #007acc;
-        opacity: 1;
-    }
-    
     .work-item .work-description,
-    .music-description,
     .tech-description {
         font-size: 20px !important;
         padding: 0 1rem;
+    }
+    
+    .music-description {
+        font-size: 20px !important;
+    }
+    
+    .music-description a {
+        font-size: 18px !important;
     }
     
     .work-item,
@@ -672,25 +630,20 @@
         font-size: 16px;
     }
     
-    .work-item .title-link {
-        font-size: 16px;
-    }
-    
     .tech-item h3 {
         font-size: 16px;
     }
     
-    .tech-item .title-link {
-        font-size: 16px;
-    }
-    
-    .music-item .title-link {
-        font-size: 16px;
-    }
-    
     .work-item .work-description,
-    .music-description,
     .tech-description {
+        font-size: 18px !important;
+    }
+    
+    .music-description {
+        font-size: 18px !important;
+    }
+    
+    .music-description a {
         font-size: 18px !important;
     }
     
